@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        //--- 1
+
+//    function who (age){
+//        if (age<12) {
+//            alert("Kid");
+//        } else if (age>=12 && age<=18) {
+//            alert("teenager");
+//        } else if (age >18 && age<=60) {
+//            alert("adult");
+//        }else if (age > 60) alert("old");
+//    };
+//  alert(who(prompt("input your age")));
+
+        //--- 2
+
+//        function symbol(symb){
+//            if(symb == 0){
+//                alert(")");
+//            }else if(symb == 1){
+//                alert("!");
+//            }else if(symb == 2){
+//                alert("@");
+//            }else if(symb == 3){
+//                alert("#");
+//            }else if(symb == 4){
+//                alert("$");
+//            }else if(symb == 5){
+//                alert("%");
+//            }else if(symb == 6){
+//                alert("^");
+//            }else if(symb == 7){
+//                alert("&");
+//            }else if(symb == 8){
+//                alert("*");
+//            }else if(symb == 9){
+//                alert("(");
+//            };
+//        };
+//        alert(symbol(+prompt("input 0-9")));
+//
+            //------3
+
+//
+//    function find (){
+//        let x = prompt("трехзач число");
+//        let str = x.split('');
+//        let s=0;
+//        let c="dif";
+//
+//        for(let i=1;i<x.length;i++){
+//            if(str[s]==str[i]){
+//                c="seems"
+//                break;
+//            }else if(str[s++]==str[++i]){
+//                 c="seems"
+//                break;
+//            }else if(str[s++]==str[i++]){
+//                 c="seems"
+//                break;
+//            }
+//            }
+//alert(c);
+//    }
+//find();
+
+
+
+//------4
+
+//let s = +prompt("input year");
+//
+//        function year(){
+//            for(s;;){
+//            if(s%400==0){
+//                alert("visokosnyi");
+//                 break;
+//            }else if(s%4==0&&s%100>0){
+//                alert("visokosnyi");
+//                break;
+//            }else{alert("norm god");break;}}};
+//year();
+
+
+  //----5
+//        function palindrom(){
+//
+//        let x = prompt("input");
+//        let str = x.split("").reverse().join("");
+//        x==str ? alert("palindrom"):alert("no palindrom");
+//        }
+//        palindrom();
+//
+//
+
+
+    </script>
+</head>
+<body>
+
+<!--
+ //-------6
+  <form>
+      <input id="inp" type="text">
+      <button id="usd">USD</button>
+      <button id="eur">EUR</button>
+      <button id="azn">AZN</button>
+   </form>
+<div id="str"></div>
+-->
+
+<script>
+//usd.onclick = function(){
+//    let x = document.getElementById(`inp`).value;
+//    let c = x*28.5;
+//    alert(`USD `+c);
+//};
+//    eur.onclick = function(){
+//    let x = document.getElementById(`inp`).value;
+//    let c = x*31;
+//    alert(`EUR `+c);
+//};
+//    azn.onclick = function(){
+//    let x = document.getElementById(`inp`).value;
+//    let c = x*8.6;
+//    alert(`AZN `+c);
+//};
+</script>
+
+
+
+<!--
+//--------7
+<form>
+    <input id="price" type="text">
+    <input id="pay" type="button" value="press">
+</form>
+-->
+<script>
+//    pay.onclick = function(){
+//
+//        let x = document.getElementById(`price`).value;
+//            let pr=0;
+//        if (x>=200&&x<300){
+//            pr=x-x*0.03;
+//        }else if(x>=300&&x<500){
+//            pr=x-x*0.05;
+//        }else if(x>=500){
+//            pr=x-x*0.07;
+//        }else{pr=x;}
+//         alert("цена со скидкой "+pr);
+//    }
+
+
+    </script>
+<!--
+<form>
+    <input id="circle" type="text" placeholder="Длинна круга">
+    <input id="square" type="text" placeholder="Периметр квадрата">
+    <input id="get" type="button" value="press">
+</form>
+-->
+   <script>
+//    get.onclick = function(){
+//        let c = document.getElementById(`circle`).value;
+//        let s = document.getElementById(`square`).value;
+//        let diametr = c/3.14;
+//        let side = s/4;
+//        if(diametr<=side){
+//            alert("Помещается");
+//        }else{ alert("Не помещается")};
+//    }
+    </script>
+
+<!--
+//----------9
+<p>Кто ты?</p>
+<select id="first">
+   <option value="0">Альбатрос</option>
+   <option value="2">Человек</option>
+   <option value="0">Москаль</option>
+</select>
+<p>Где хорошо?</p>
+<select id="second">
+   <option value="0">Дома</option>
+   <option value="0">На работе</option>
+   <option value="2">В гостях</option>
+</select>
+<p>Сколько дней в неделе?</p>
+<select id="third">
+   <option value="0">1</option>
+   <option value="2">7</option>
+   <option value="0">5</option>
+</select>
+<br>
+-->
+<!--<button id="init">Результат</button>-->
+
+<script>
+//    init.onclick = function(){
+//        let a = parseInt(document.getElementById(`first`).value);
+//        let b = parseInt(document.getElementById(`second`).value);
+//        let c = parseInt(document.getElementById(`third`).value);
+//        let result = a+b+c;
+//        alert("Ваш результат "+result);
+//    }
+</script>
+
+<form>
+    <input id="day" type="number" placeholder="день">
+    <input id="month" type="text" placeholder="месяц">
+    <input id="year" type="text" placeholder="год">
+    <input id="result" type="button" value="press">
+</form>
+
+<script>
+
+    result.onclick = function(){
+        let a = parseInt(document.getElementById(`day`).value);
+        let b = document.getElementById(`month`).value;
+        let c = parseInt(document.getElementById(`year`).value);
+
+        switch(b){
+            case `январь`:
+                                if(a>=1&&a<=30){
+                                    a++;
+                                }else if(a==31){
+                                    a=1;
+                                    b=`февраль`;
+                                };
+                                break;
+            case `февраль`:
+                                    if(a>=1&&a<=27){
+                                        a++;
+                                    }else if(a==28){
+
+                                for(c;;){  //--узнать высокосный год или нет
+                                if(c%400==0){
+                                     a++;
+                                     break;
+                                }else if(c%4==0&&c%100>0){
+                                    a++;
+                                    break;
+                                }else{a=1;
+                                      b=`март`};
+                                    break;};
+                                    break;
+
+                                    }else if(a==29){
+                                    a=1;
+                                    b=`март`;
+                                    break;};
+
+            case `март`:
+                if(a>=1&&a<=30){
+                                    a++;
+                                }else if(a==31){
+                                    a=1;
+                                    b=`апрель`;
+                                };
+                                break;
+            case `апрель`:
+                if(a>=1&&a<=29){
+                                    a++;
+                                }else if(a==30){
+                                    a=1;
+                                    b=`май`;
+                                };
+                                break;
+            case `май`:
+                if(a>=1&&a<=30){
+                                    a++;
+                                }else if(a==31){
+                                    a=1;
+                                    b=`июнь`;
+                                };
+                                break;
+            case `июнь`:
+                if(a>=1&&a<=29){
+                                    a++;
+                                }else if(a==30){
+                                    a=1;
+                                    b=`июль`;
+                                };
+                                break;
+            case `июль`:
+                if(a>=1&&a<=30){
+                                    a++;
+                                }else if(a==31){
+                                    a=1;
+                                    b=`август`;
+                                };
+                                break;
+            case `август`:
+                if(a>=1&&a<=30){
+                                    a++;
+                                }else if(a==31){
+                                    a=1;
+                                    b=`сентябрь`;
+                                    };
+                                break;
+            case `сентябрь`:
+                if(a>=1&&a<=29){
+                                    a++;
+                                }else if(a==30){
+                                    a=1;
+                                    b=`октябрь`;
+                                };
+                                break;
+            case `октябрь`:
+                if(a>=1&&a<=30){
+                                    a++;
+                                }else if(a==31){
+                                    a=1;
+                                    b=`ноябрь`
+                                    };
+
+                                break;
+            case `ноябрь`:
+                if(a>=1&&a<=29){
+                                    a++;
+                                }else if(a==30){
+                                    a=1;
+                                    b=`декабрь`;
+                                };
+                                break;
+            case `декабрь`:
+                if(a>=1&&a<=30){
+                                    a++;
+                                }else if(a==31){
+                                    a=1;
+                                    c++;
+                                    b=`январь`;
+                                };
+                                break;
+        };
+        console.log(" День "+a+" Месяц "+b+" Год "+c);
+    }
+
+
+</script>
+
+</body>
+</html>
